@@ -28,7 +28,7 @@ look for "<------------" for easy navigation
 
 @font-face {
   font-family: Lovelo;
-  src: url('/fonts/Lovelo\ Black.otf');
+  src: url('../fonts/Lovelo\ Black.otf');
 }
 
 body {
