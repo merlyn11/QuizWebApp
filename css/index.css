@@ -217,7 +217,7 @@ body {
 #start_quiz_container {
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/start-background.jpg');
+  background-image: url('/images/start-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -318,7 +318,7 @@ body {
 #choices-container {
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/choices-background.jpg');
+  background-image: url('/images/choices-background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -437,7 +437,7 @@ body {
 #quiz-main-container {
   width: 100vw;
   height: 100vh;
-  background: url('../images/mainBG.jpg');
+  background: url('/images/mainBG.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
