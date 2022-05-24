@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>ICT! Play Quizzes Web</title>
+</head>
+
+<body>
+    <!-- MAIN -->
+    <section id="choices-container">
+
+        <!-- CONTAINER FOR CHOICES -->
+        <div id="choices-box">
+
+            <!-- HEADING -->
+            <div id="mode-level">
+                <h1>MODE LEVEL</h1>
+            </div>
+
+            <!-- CHOICES  -->
+            <div id="grade-levels-container">
+
+                <!-- CONTAINER FOR GRADE 7-8 -->
+                <div id="grade7-8_container">GRADE 7-8
+                    <div class="container"> <img src="../images/girl.png" alt="">
+                    </div>
+                </div>
+
+                <!-- CONTAINER FOR GRADE 9-10 -->
+                <div id="grade9-10_container">GRADE 9-10 <div class="container"><img src="../images/boy.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DESIGNS -->
+        <img src="../images/yellow-planet.png" alt="" class="design position-absolute">
+    </section>
+
+    <!-- QUIZ APP CONTAINER -->
+    <section id="quiz-main-container" class="hide">
+        <div id="quiz-container">
+
+            <!-- TRACK WHAT QUESTION YOU'RE IN -->
+            <div id="progress-container">
+                <div id="progress">
+                    <p>Question <span id="qnumber">0</span> of <span id="qnumberTotal"> 10</span></p>
+                    <div class="progressBar">
+                        <div class="progressBarFull"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOR SCORE AND TIMER -->
+            <div class="header">
+                <div class="scoreBox">Score: <span>0</span></div>
+                <div class="timerBox">Time Left: <span>0</span></div>
+            </div>
+
+            <div id="questionBox-container">
+                <h1 class="que_text questionBox">
+                </h1>
+                <div class="optionBox">
+                </div>
+            </div>
+
+            <div class="footer">
+                <button id="next" style="visibility: hidden;">Next</button>
+            </div>
+        </div>
+
+        <!-- DESIGNS -->
+        <img src="../images/uranus.png" alt="" class="design1 position-absolute">
+        <img src="../images/meteor.png" alt="" class="design2 position-absolute">
+        <img src="../images/saturn.png" alt="" class="design3 position-absolute">
+    </section>
+
+    <section id="showResult_Container" class="hide">
+        <div id="showResult">
+            <h1>Best Score</h1>
+            <img src="../images/Trophy.png" alt="" class="trophy">
+            <div class="correctContainer result">CORRECT: <span class="correctAns">0</span> </div>
+            <div class="incorrectContainer result">INCORRECT: <span class="incorrect">0</span> </div>
+            <!-- <div class="totalContainer result">PERCENTAGE: <span class="total">0</span> </div> -->
+            <div class="totalContainer result">TOTAL SCORE: <span class="totalScore">0</span> </div>
+            <button id="main-menu">MAIN MENU</button>
+        </div>
+
+        <!-- DESIGNS -->
+        <img src="../images/cloud.png" alt="" class="design1 position-absolute">
+        <img src="../images/rocket1.png" alt="" class="design2 position-absolute">
+        <img src="../images/saturn.png" alt="" class="design3 position-absolute">
+        <img src="../images/gif.gif" class="design4 position-absolute">
+    </section>
+    <script src='../js/script.js'></script>
+    <script src="../js/questions.js"></script>
+</body>
+
+</html>

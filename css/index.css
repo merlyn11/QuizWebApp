@@ -1,0 +1,857 @@
+/****************************************
+
+
+////////////LEGEND 
+(Dsgn) - for designs
+(txt) - for text
+(Container) - for containers
+
+look for "<------------" for easy navigation
+
+
+*****************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Radio Canada';
+}
+
+::selection {
+  background: #ac47aa;
+}
+
+@font-face {
+  font-family: Lovelo;
+  src: url(/fonts/Lovelo\ Black.otf);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: #2b042e; */
+  background-image: linear-gradient(-45deg, #020101, #2b042e);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  overflow: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* (Container) <--------------------------------------------   */
+#main-container {
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  padding: 20px;
+}
+
+/* FORM */ /* (txt) <--------------------------------------------   */
+#form-container h1 {
+  font-family: 'Lobster', serif;
+  font-weight: 700;
+  font-size: 4rem;
+  text-shadow: 1px 1px 0 grey, 2px 2px 0 grey, 3px 3px 0 grey, 4px 4px 0 grey;
+}
+
+/* (txt) <--------------------------------------------   */
+#form-container h2 {
+  font-family: 'Arimo';
+  font-size: 2rem;
+}
+
+/*(Dsgn) (txt) <--------------------------------------------   */
+.font-decoration {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+/* FORM CONTAINER */ /* (container) <--------------------------------------------   */
+#form {
+  margin-top: 50px;
+}
+
+#form input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  padding: 0px 20px;
+  width: 100%;
+  color: #fff;
+}
+
+#form input::placeholder {
+  font-family: 'Radio Canada';
+  color: #fff;
+}
+
+#form button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 1%;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#form button:hover {
+  color: #0009;
+}
+
+.input-container {
+  padding: 20px;
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: flex;
+  color: #fff;
+}
+
+/*(Container) (Dsgn) <--------------------------------------------   */
+#image-container {
+  position: relative;
+}
+/*The Big Planet with ring (Uranus i think?)*/
+#image-container img {
+  position: absolute;
+  right: -1200px;
+  top: -200px;
+  width: 1200px;
+  height: 900px;
+  animation: ToMove 3s infinite;
+}
+
+/* ANIMATION FOR MAKING IT MOVE */
+@keyframes ToMove {
+  0% {
+    right: -1200px;
+  }
+  50% {
+    right: -1190px;
+  }
+
+  100% {
+    right: -1200px;
+  }
+}
+
+/* DESIGNS */ /* (Dsgn) <--------------------------------------------   */
+.position-absolute {
+  position: absolute;
+}
+
+.img1 {
+  height: 250px;
+  bottom: -90px;
+  left: 20px;
+  animation: upndown 8s infinite;
+  z-index: -999;
+}
+
+@keyframes upndown {
+  0% {
+    bottom: -90px;
+    left: 20px;
+  }
+  50% {
+    bottom: -80px;
+    height: 300px;
+    left: 30px;
+  }
+
+  100% {
+    bottom: -90px;
+    left: 20px;
+  }
+}
+
+.img2 {
+  height: 450px;
+  width: 450px;
+  left: -500px;
+  top: -50px;
+  animation: Rotating 50s infinite;
+}
+
+@keyframes Rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/*********************************************************** START QUIZ PAGE ************************************************************/
+
+/* (Container) <--------------------------------------------   */
+#start_quiz_container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/start-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arimo';
+  position: relative;
+}
+
+.container {
+  text-align: center;
+}
+
+#start {
+  font-family: 'Lovelo';
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  background-color: #ac47aa;
+  margin-top: 20px;
+  width: 400px;
+  height: 60px;
+  box-shadow: 5px 5px #1e1c40;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#start:hover {
+  background-color: #1e1c40;
+}
+
+/* DESIGNS ON START QUIZ PAGE */ /* (Dsgn) <--------------------------------------------   */
+#start_quiz_container .design1 {
+  width: 300px;
+  left: -100px;
+  bottom: 20px;
+  animation: RotatingThingy 20s infinite;
+}
+
+#start_quiz_container .design2 {
+  right: 0px;
+  top: -90px;
+  width: 300px;
+  animation: RotatingThingy 19s infinite;
+}
+
+#start_quiz_container .design3 {
+  right: -100px;
+  bottom: 20px;
+  width: 300px;
+  animation: RotatingThingy 18s infinite;
+}
+
+#start_quiz_container .design4 {
+  width: 400px;
+  left: -90px;
+  top: -50px;
+  animation: RotatingThingy 17s infinite;
+}
+
+/* #start_quiz_container .design5 {
+  left: 40%;
+  bottom: -27%;
+  width: 300px;
+  animation: RotatingThingy 16s infinite;
+} */
+
+/* ANIMATION FOR ROTATING AND TO MAKE YOU DIZZY CHAR! */
+@keyframes RotatingThingy {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*THE TITLE "ICT! PLAY QUIZZES" (txt) <--------------------------------------------   */
+.container h1 {
+  font-family: 'Lobster';
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 5rem;
+  width: 800px;
+  text-shadow: 1px 1px 0 grey, 2px 2px 0 grey, 3px 3px 0 grey, 4px 4px 0 grey;
+}
+
+/************************************************************************ CHOICES PAGE **********************************************************************/
+/* (Container) <--------------------------------------------   */
+#choices-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/choices-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arimo';
+  position: relative;
+}
+
+#choices-container.hide {
+  display: none;
+}
+
+#choices-container.show {
+  display: flex;
+}
+
+/* (Container) <--------------------------------------------   */
+#choices-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mode-level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 600px;
+  background-color: #1e1c40;
+  border-radius: 20px;
+  padding: 0 20px;
+  border: 5px solid #1e1c40;
+  transition: all ease-in 0.4s;
+}
+
+#mode-level:hover {
+  border: 5px solid #ac47aa;
+}
+
+/* (txt) <--------------------------------------------   */
+#mode-level h1 {
+  position: absolute;
+  font-family: 'Sriracha', cursive;
+  font-weight: 700;
+  color: #fff;
+  font-size: 5rem;
+  text-shadow: 1px 1px grey, 2px 2px grey, 3px 3px grey;
+  pointer-events: none;
+}
+
+/* (Container) <--------------------------------------------   */
+#grade-levels-container {
+  display: flex;
+}
+
+/* (Container) <--------------------------------------------   */
+#grade7-8_container,
+#grade9-10_container {
+  font-size: 2rem;
+  line-height: 50px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px grey, 2px 2px grey, 3px 3px grey;
+  margin: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* THE BOY AND GIRL IMAGE   */
+#grade7-8_container .container img,
+#grade9-10_container .container img {
+  position: absolute;
+  bottom: -8px;
+  height: 200px;
+}
+
+/* (Container) <--------------------------------------------   */
+#grade7-8_container .container,
+#grade9-10_container .container {
+  cursor: pointer;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-color: #ac47aa;
+  box-shadow: 5px 5px 2px #1e1c40;
+  transition: background-color ease-in-out 0.6s;
+}
+
+/* THE HOVER EFFECT   */
+#grade7-8_container .container:hover,
+#grade9-10_container .container:hover {
+  background-color: #1e1c40;
+}
+
+/* (Dsgn) <--------------------------------------------   */
+#choices-container .design {
+  left: -60px;
+  top: -10px;
+  width: 400px;
+  animation: RotatingThingy 23s infinite;
+}
+
+/************************************************************** MAIN *****************************************************************************/
+/* (Cotainer) <--------------------------------------------   */
+#quiz-main-container {
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/mainBG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quiz-main-container.hide {
+  display: none;
+}
+
+#quiz-main-container.show {
+  display: flex;
+}
+
+/* (Container) <--------------------------------------------   */
+#quiz-container {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* (Container) <--------------------------------------------   */
+#progress-container {
+  background-color: #e853cf;
+  width: 300px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+#progress {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+/* (txt) <--------------------------------------------   */
+#progress p {
+  width: 100%;
+  margin: 0 10px;
+  padding-bottom: 2px;
+}
+
+.progressBar {
+  justify-self: end;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #e853cf;
+}
+
+.progressBarFull {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #f7dfff;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 10px 0;
+  z-index: 1;
+}
+
+.timerBox,
+.scoreBox {
+  border-radius: 20px;
+  background-color: #ffff;
+  padding: 5px 5px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.scoreBox {
+  width: 120px;
+}
+
+.scoreBox,
+.scoreBox span {
+  color: #000;
+  font-family: 'Lovelo';
+  justify-self: start;
+}
+
+.scoreBox span {
+  margin-left: 5px;
+}
+
+.timerBox,
+.timerBox span {
+  color: #000;
+  font-family: 'Lovelo';
+  display: flex;
+  justify-self: end;
+}
+
+.timerBox span,
+.scoreBox span {
+  text-align: center;
+  width: 50px;
+  border-radius: 20px;
+  background-color: #ac47aa;
+}
+
+.timerBox span {
+  margin-left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.optionBox {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.option {
+  background-color: #d0addc;
+  width: 100%;
+  height: 50px;
+  margin: 5px 0px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.option.correct {
+  background-color: green;
+  color: #ffff;
+}
+
+.option.wrong {
+  background-color: red;
+  color: #ffff;
+}
+
+.option.already-answered {
+  pointer-events: none;
+}
+
+#questionBox-container {
+  width: 100%;
+  z-index: 1;
+}
+
+.questionBox {
+  font-family: 'Lovelo';
+  font-size: 2rem;
+  color: #ffff;
+  align-self: start;
+  margin-top: 20px;
+}
+
+.optionBox,
+.option {
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#next {
+  padding: 5px 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  height: 30px;
+  width: 150px;
+  cursor: pointer;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+#result {
+  padding: 5px 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  justify-self: end;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/* HOVER EFFECT */
+#next:hover,
+#result:hover,
+#main-menu:hover {
+  background-color: #2b042e;
+  color: #ffff;
+}
+
+/* DESIGNS */ /* (Dsgn) <--------------------------------------------   */
+#quiz-main-container .design1 {
+  width: 300px;
+  left: -100px;
+  bottom: -150px;
+  animation: RotatingThingy 26s infinite;
+}
+
+#quiz-main-container .design2 {
+  width: 300px;
+  right: 0px;
+  bottom: 0px;
+  animation: meteor 10s infinite;
+}
+
+@keyframes meteor {
+  0% {
+    right: 0px;
+    bottom: 0px;
+  }
+
+  50% {
+    right: 100px;
+    bottom: -100px;
+  }
+
+  100% {
+    right: 0px;
+    bottom: 0px;
+  }
+}
+
+#quiz-main-container .design3 {
+  width: 400px;
+  right: -100px;
+  top: -100px;
+  animation: ZoomIn 26s infinite;
+}
+
+@keyframes ZoomIn {
+  0% {
+    width: 400px;
+  }
+
+  50% {
+    width: 500px;
+  }
+
+  100% {
+    width: 400px;
+  }
+}
+
+/**********************************SHOW RESULT CONTAINER*********************/
+
+#showResult_Container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #3d083d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#showResult_Container.hide {
+  display: none;
+}
+
+#showResult_Container.show {
+  display: flex;
+}
+
+#showResult {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffff;
+}
+
+#showResult h1 {
+  margin: 20px 0 0;
+  font-size: 6rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.result {
+  align-self: start;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.correctContainer {
+  margin-top: 40px;
+}
+
+#main-menu {
+  font-size: 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  border: none;
+  margin-top: 50px;
+  align-self: end;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+/* DESIGNS */
+
+#showResult_Container .trophy {
+  width: 100px;
+}
+
+#showResult_Container .design1 {
+  width: 400px;
+  left: 0px;
+  bottom: 0px;
+}
+
+#showResult_Container .design2 {
+  width: 300px;
+  left: 0px;
+  bottom: 0px;
+  animation: rocket1 10s infinite;
+}
+
+@keyframes rocket1 {
+  0% {
+    left: 0px;
+    bottom: 0px;
+  }
+
+  10% {
+    left: 5px;
+    bottom: 5px;
+  }
+
+  20% {
+    left: 10px;
+    bottom: 10px;
+  }
+
+  30% {
+    left: 5px;
+    bottom: 5px;
+  }
+
+  50% {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  100% {
+    left: 0px;
+    bottom: 0px;
+  }
+}
+
+#showResult_Container .design3 {
+  width: 800px;
+  right: -400px;
+  transform: rotate(-25deg);
+  animation: zoom 20s infinite;
+}
+
+@keyframes zoom {
+  0% {
+    width: 800px;
+  }
+
+  50% {
+    width: 900px;
+  }
+
+  100% {
+    width: 800px;
+  }
+}
+
+#showResult_Container .design4 {
+  width: 400px;
+  top: 70px;
+  z-index: 0;
+}
