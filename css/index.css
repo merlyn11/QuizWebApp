@@ -28,7 +28,7 @@ look for "<------------" for easy navigation
 
 @font-face {
   font-family: Lovelo;
-  src: url("../fonts/Lovelo\ Black.otf");
+  src: url("fonts/Lovelo\ Black.otf");
 }
 
 body {
@@ -217,7 +217,7 @@ body {
 #start_quiz_container {
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/start-background.jpg");
+  background-image: url("/images/start-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
