@@ -103,14 +103,14 @@ function getResult(e) {
 
     // UNCOMMENT IF NEEDED THIS IS TO PREVENT CHEATING AND ONLY MEMORIZING THE ANSWER
     // if the answer is incorrect show the correct answer <---------------------------------------------- IF YOU WANT TO REVEAL THE ANSWER AFTER CLICKING WRONG
-    // const optionLen = optionContainer.children.length
+     const optionLen = optionContainer.children.length
 
-    // // console.log(optionContainer.children.id)
-    // for (let i = 0; i < optionLen; i++) {
-    //   if (parseInt(optionContainer.children[i].id) === currentQuestion.answer) {
-    //     optionContainer.children[i].classList.add('correct')
-    //   }
-    // }
+     console.log(optionContainer.children.id)
+    for (let i = 0; i < optionLen; i++) {
+      if (parseInt(optionContainer.children[i].id) === currentQuestion.answer) {
+        optionContainer.children[i].classList.add('correct')
+       }
+     }
   }
   next.style.visibility = 'visible'
   next.style.transition = 'none'
