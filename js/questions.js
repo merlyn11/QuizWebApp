@@ -60,21 +60,21 @@ let questions = [
 let grade10 = [
   {
     numb: 1,
-    question: '"B" is the keyboard shortcut key for?',
-    answer: 2,
-    options: ['Zoom Tool', 'Preview', 'Blur', 'Move Tool'],
+    question: '---------- is a spreadsheet programme?',
+    answer: 0,
+    options: ['MS Excel', 'MS Word', 'MS Dos', 'MS Powerpoint'],
   },
   {
     numb: 2,
-    question: '"M" is the keyboard shortcut for?',
+    question: 'The use of tenchnology to enhance learning process is called --------?',
     answer: 1,
-    options: ['Hand Tool', 'Move Tool', 'Undo', 'Scale'],
+    options: ['IT', 'ICT ', 'Information technology', 'Communication technology'],
   },
   {
     numb: 3,
-    question: '"P" is the keyboard shortcut for?',
-    answer: 1,
-    options: ['Scale', 'Preview', 'Move Tool', 'Print'],
+    question: 'The website address of UGC is?',
+    answer: 3,
+    options: ['WWW.Ugc.com', 'WWW.Ugc.Org', 'WWW.Ugc.in', 'WWW.Ugc.ac.in'],
   },
   {
     numb: 4,
@@ -84,9 +84,9 @@ let grade10 = [
   },
   {
     numb: 5,
-    question: '"Command/Control I" is the keyboard shortcut for?',
+    question: 'Website is a collection of?',
     answer: 3,
-    options: ['Colors', 'Full-Screen', 'Deselect', 'Duplicate'],
+    options: ['Audio files', 'Image files', 'Video files', 'HTML files'],
   },
   {
     numb: 6,
@@ -96,9 +96,14 @@ let grade10 = [
   },
   {
     numb: 7,
-    question: '"S" is the keyboard shortcut for?',
-    answer: 2,
-    options: ['Select Layer', 'Correction', 'Scale', 'Select All'],
+    question: 'What does HTML stand for?',
+    answer: 1,
+    options: [
+      'Hyper Text Preprocessor',
+      'Hyper Text Markup Language',
+      'Hyper Text Multiple Language',
+      'Hyper Tool Multi Language',
+    ],
   },
   {
     numb: 8,
