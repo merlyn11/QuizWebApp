@@ -9,7 +9,7 @@ const user = document.querySelector('#username-input'),
 
 // CHECK IF THE USER INPUT IS VALID
 
-alert('WELCOME TO ICT! QUIZ PLAYING WEB APP!')
+alert('WELCOME TO GENERAL ICT QUIZ APPLET!')
 
 submit.addEventListener('click', function () {
   if (!user.checkValidity()) {
