@@ -855,3 +855,81 @@ body {
   top: 70px;
   z-index: 0;
 }
+
+@media (max-width: 869px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #main-container img {
+    display: none;
+  }
+
+  #start_quiz_container img {
+    display: none;
+  }
+
+  #start_quiz_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container > h1 {
+    font-size: 3rem;
+    width: 80%;
+  }
+
+  #start {
+    width: 200px;
+  }
+
+  #choices-container > .design {
+    display: none;
+  }
+
+  #choices-container {
+    flex-direction: column;
+  }
+
+  #mode-level {
+    width: 80%;
+  }
+
+  #mode-level > h1 {
+    font-size: 3rem;
+  }
+
+  #grade-levels-container {
+    flex-direction: column;
+  }
+
+  #grade7-8_container {
+    margin-bottom: 50px;
+  }
+
+  #quiz-main-container > img {
+    display: none;
+  }
+
+  #showResult_Container > img {
+    display: none;
+  }
+
+  #showResult {
+    text-align: center;
+    width: 80%;
+  }
+
+  #showResult > .trophy {
+    margin: 20px 0;
+  }
+}
